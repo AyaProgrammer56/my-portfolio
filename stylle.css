@@ -1,0 +1,139 @@
+/* ======================================== */
+        /* 1. THEME & VARIABLES                   */
+        /* ======================================== */
+        :root {
+            /* Fallback variables */
+            --primary-color: #E91E63;
+            --primary-rgb: 233, 30, 99;
+        }
+
+        [data-bs-theme="dark"] {
+            --bs-body-bg: #111111; /* K7el Sريح */
+            --bs-body-color: #a0a0a0;
+            --surface-color: #1e1e1e;
+            --bs-border-color: rgba(var(--primary-rgb), 0.2);
+            --bs-heading-color: #ffffff;
+            --bs-modal-bg: var(--surface-color);
+        }
+
+        [data-bs-theme="light"] {
+            --bs-body-bg: #f8f9fa;
+            --bs-body-color: #495057;
+            --surface-color: #ffffff;
+            --bs-border-color: #dee2e6;
+            --bs-heading-color: #212529;
+            --bs-modal-bg: var(--surface-color);
+        }
+        
+        /* ======================================== */
+        /* 2. STYLES GÉNÉRAUX                     */
+        /* ======================================== */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .card, .form-control, .modal-content {
+            background-color: var(--surface-color);
+            border: 1px solid var(--bs-border-color);
+        }
+
+        .nav-link.active, .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            --bs-btn-bg: var(--primary-color);
+            --bs-btn-border-color: var(--primary-color);
+            --bs-btn-hover-bg: #c2185b;
+            --bs-btn-hover-border-color: #c2185b;
+            --bs-btn-color: #fff;
+        }
+
+        .btn-outline-primary {
+            --bs-btn-color: var(--primary-color);
+            --bs-btn-border-color: var(--primary-color);
+            --bs-btn-hover-bg: var(--primary-color);
+            --bs-btn-hover-border-color: var(--primary-color);
+            --bs-btn-hover-color: #fff;
+        }
+        
+        .form-control:focus {
+             box-shadow: 0 0 0 0.25rem rgba(var(--primary-rgb), 0.25);
+             border-color: var(--primary-color);
+        }
+
+        /* ======================================== */
+        /* 3. STYLES SPÉCIFIQUES                  */
+        /* ======================================== */
+        
+        
+        .about-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer; /* Bach iban clickable */
+        }
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.1);
+        }
+        
+        .tech-card {
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .tech-card:hover {
+            transform: scale(1.05);
+        }
+        .tech-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* ======================================== */
+        /* 4. FOOTER                              */
+        /* ======================================== */
+        .main-footer {
+            background-color: #1e1e1e;
+        }
+        .footer-col h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col a, .footer-col p {
+            color: var(--bs-body-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-col a:hover {
+            color: var(--primary-color);
+        }
+        .footer-socials a {
+            color: var(--bs-body-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .footer-socials a:hover {
+            color: var(--primary-color);
+        }
+        .sub-footer {
+            border-top: 1px solid var(--bs-border-color);
+        }
+
+        .navbar-brand:hover { color: #E91E63;
+
+}
