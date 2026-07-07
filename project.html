@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | aya lahrar</title>
+    <title>My Projects | Aya Lahrar</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -20,145 +20,206 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--  CSS -->
     <link href="stylle.css" rel="stylesheet" />
-   
 </head>
 <body data-bs-theme="dark">
 
-    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color);">
+    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color); border-bottom: 1px solid var(--bs-border-color);">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="PORTFOLIO.htmlPP">Lahrar</a>
+            <a class="navbar-brand fw-bold fs-4" href="index.html#home" style="letter-spacing: -1px;">Lahrar.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work">Travaux</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#competence">Competence</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
-             <button class="btn btn-outline-secondary" id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <button class="btn btn-outline-secondary rounded-circle p-2 d-flex align-items-center justify-content-center" id="theme-toggle" style="width: 40px; height: 40px; border-color: var(--bs-border-color);">
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </div>
     </header>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline" style=" color: var( --primary-color)!important;">Projects</span></h1>
+
+    <main>
+        <section class="page-header text-center">
+            <div class="container">
+                <h1 class="page-title" data-aos="fade-up">My Projects</h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Discover some of my recent achievements in web development and design.</p>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                
+                <div class="row g-4">
+                    <!-- Project Card 1: EduGuide -->
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="card h-100 border-0 shadow rounded-4 overflow-hidden" style="background-color: var(--surface-color);">
+                            <div class="p-4 d-flex justify-content-center align-items-center" style="background-color: rgba(var(--primary-rgb), 0.05); min-height: 300px;">
+                                <img src="assets/img/proj/eduGuide.jpeg" alt="EduGuide Project" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: contain;">
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">EduGuide</h3>
+                                <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.7;">EduGuide is an interactive digital platform designed to support post-baccalaureate students in their academic and professional orientation. It offers reliable resources, self-assessment tools, and centralized access to information on university courses, careers, and scholarships.</p>
+                                
+                                <div class="mb-4">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary me-2 mb-2 px-2 py-1">Frontend</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">HTML5</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">CSS3</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">JavaScript</span>
+                                </div>
+                                
+                                <a href="https://github.com/AyaProgrammer56" target="_blank" class="btn btn-outline-secondary rounded-pill w-100"><i class="fab fa-github me-2"></i>GitHub Repo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                             <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder"><span style="color: var(--primary-color);">Project</span> EduGuide</h2>
-                                            <p><span class="text-primary g-5 fw-bolder">EduGuide</span> est une plateforme numérique interactive conçue pour accompagner les étudiants après le baccalauréat dans leur orientation académique et professionnelle. Elle propose des ressources fiables, des outils d’auto-évaluation, et un accès centralisé aux informations sur les formations universitaires, les écoles supérieures, les métiers, ainsi que les bourses disponible</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
+
+                    <!-- Project Card 2: OptiStyle -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow rounded-4 overflow-hidden" style="background-color: var(--surface-color);">
+                            <div class="p-4 d-flex justify-content-center align-items-center" style="background-color: rgba(var(--primary-rgb), 0.05); min-height: 300px;">
+                                <img src="assets/img/proj/OptiStyle.jpeg" alt="OptiStyle Project" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: contain;">
                             </div>
-                             <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder"><span style="color: var(--primary-color);">Project</span> Gumbri</h2>
-                                            <p><span class="text-primary g-5 fw-bold">Gumbri</span> est une plateforme de commerce électronique moderne, intuitive et sécurisée, permettant aux utilisateurs de découvrir, parcourir et acheter une variété de produits en ligne. Le site vise à offrir une expérience d'achat fluide avec un design responsive, des paiements sécurisés et une interface conviviale.</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">OptiStyle</h3>
+                                <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.7;">OptiStyle is a modern, intuitive, and secure platform allowing users to discover, browse, and purchase a variety of products online. The site aims to provide a seamless shopping experience with a responsive design, secure payments, and a user-friendly interface.</p>
+                                
+                                <div class="mb-4">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary me-2 mb-2 px-2 py-1">Frontend</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">React</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">Bootstrap</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">JavaScript</span>
                                 </div>
+                                
+                                <a href="https://github.com/AyaProgrammer56" target="_blank" class="btn btn-outline-secondary rounded-pill w-100"><i class="fab fa-github me-2"></i>GitHub Repo</a>
                             </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder"><span style="color: var(--primary-color);">Project</span> AJAK</h2>
-                                            <p><span class="text-primary g-5 fw-bold">AJAK</span> (Association des Jeunes Avocats à Khémisset) est une plateforme web dédiée à la présentation de l'association, la valorisation de ses membres, et la diffusion de ses activités. Le site a pour objectif de rapprocher les citoyens des jeunes avocats de la ville de Khémisset, en facilitant l'accès à l'information juridique, aux événements de sensibilisation, et aux services proposés par l'association.</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: AJAK -->
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="card h-100 border-0 shadow rounded-4 overflow-hidden" style="background-color: var(--surface-color);">
+                            <div class="p-4 d-flex justify-content-center align-items-center" style="background-color: rgba(var(--primary-rgb), 0.05); min-height: 300px;">
+                                <img src="assets/img/proj/ajak.jpeg" alt="AJAK Project" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: contain;">
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">AJAK</h3>
+                                <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.7;">AJAK (Association of Young Lawyers in Khémisset) is a web platform dedicated to presenting the association, promoting its members, and broadcasting its activities. The site aims to bring citizens closer to the young lawyers by facilitating access to legal information and awareness events.</p>
+                                
+                                <div class="mb-4">
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">HTML5</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">CSS3</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">JavaScript</span>
+                                    <span class="badge bg-info bg-opacity-10 text-info border border-info me-2 mb-2 px-2 py-1">Backend</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">Flask</span>
                                 </div>
+                                
+                                <a href="https://github.com/AyaProgrammer56" target="_blank" class="btn btn-outline-secondary rounded-pill w-100"><i class="fab fa-github me-2"></i>GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: GHM Jewellery -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow rounded-4 overflow-hidden" style="background-color: var(--surface-color);">
+                            <div class="p-4 d-flex justify-content-center align-items-center" style="background-color: rgba(var(--primary-rgb), 0.05); min-height: 300px;">
+                                <img src="assets/img/proj/ghm jewellery.jpeg" alt="GHM Jewellery Project" class="img-fluid rounded shadow-sm" style="max-height: 280px; object-fit: contain;">
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">GHM Jewellery</h3>
+                                <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.7;">GHM Jewellery is an elegant e-commerce platform crafted to showcase and sell luxury jewelry. The platform features a sophisticated design, intuitive navigation, and detailed product galleries, ensuring a premium shopping experience for customers looking for high-end accessories.</p>
+                                
+                                <div class="mb-4">
+                                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary me-2 mb-2 px-2 py-1">Frontend</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">Next.js</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">Tailwind CSS</span>
+                                    <span class="badge bg-secondary bg-opacity-10 text-body border me-2 mb-2 px-2 py-1">JavaScript</span>
+                                </div>
+                                
+                                <a href="https://github.com/AyaProgrammer56" target="_blank" class="btn btn-outline-secondary rounded-pill w-100"><i class="fab fa-github me-2"></i>GitHub Repo</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="main-footer py-5">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer py-5 text-start mt-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 footer-col">
-                    <h5 class="navbar-brand fw-bold fs-4">lahrar aya</h5>
-                    <p class="pe-3">Développeur web passionné par la création d'expériences numériques belles et fonctionnelles.</p>
+                    <h5 class="navbar-brand fw-bold fs-4">Aya Lahrar</h5>
+                    <p class="pe-3 text-muted">A passionate web developer dedicated to creating beautiful and functional digital experiences.</p>
                     <div class="footer-socials mt-3">
-                        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/lahrar-aya-ab81a7348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AyaProgrammer56" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aya_jannatt?igsh=bXBicGdmZmpjYzBv" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 footer-col">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#work">Travaux</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                      <h5>Services</h5>
                     <ul class="list-unstyled">
-                        <li>Développement Web</li>
-                        <li>Développement Frontend</li>
-                        <li>Développement BackEnd</li>
-                        <li>Design UI/UX</li>
+                        <li>Web Development</li>
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>UI/UX Design</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                     <h5>Get in Touch</h5>
                     <ul class="list-unstyled">
-                        <li class="d-flex mb-2"><i class="fas fa-envelope me-2 pt-1"></i><span>aya.lahrar24@ump.ac.ma</span></li>
-                        <li class="d-flex"><i class="fas fa-phone me-2 pt-1"></i><span>+212 6 06 20 92 39</span></li>
+                        <li class="d-flex mb-2 text-muted"><i class="fas fa-envelope me-2 pt-1 text-primary"></i><span>aya.lahrar24@ump.ac.ma</span></li>
+                        <li class="d-flex text-muted"><i class="fas fa-phone me-2 pt-1 text-primary"></i><span>+212 6 06 20 92 39</span></li>
                     </ul>
                 </div>
             </div>
             <div class="sub-footer text-center mt-5 pt-4">
-                <p>&copy; 2025 lahrar aya. Tous droits réservés.</p>
+                <p class="mb-0 text-muted">&copy; 2026 Aya Lahrar. All rights reserved.</p>
             </div>
         </div>
     </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Dark/Light Mode Toggle
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const themeIcon = themeToggle.querySelector('i');
 
-            const applyTheme = (theme) => {
-                body.setAttribute('data-bs-theme', theme);
-                themeIcon.classList.toggle('fa-moon', theme === 'light');
-                themeIcon.classList.toggle('fa-sun', theme === 'dark');
-                localStorage.setItem('portfolioTheme', theme);
-            };
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true, offset: 50 });
+      
+      // Theme Toggle Logic
+      document.addEventListener('DOMContentLoaded', () => {
+          const themeToggle = document.getElementById('theme-toggle');
+          const body = document.body;
+          const icon = themeToggle.querySelector('i');
+          
+          const applyTheme = (theme) => {
+              body.setAttribute('data-bs-theme', theme);
+              icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+              localStorage.setItem('theme', theme);
+          };
 
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                applyTheme(newTheme);
-            });
+          themeToggle.addEventListener('click', () => {
+              const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+              applyTheme(newTheme);
+          });
 
-            // Appliquer le thème sauvegardé
-            const savedTheme = localStorage.getItem('portfolioTheme') || 'dark';
-            applyTheme(savedTheme);
-        });
+          applyTheme(localStorage.getItem('theme') || 'dark');
+      });
     </script>
-    </body>
+</body>
 </html>

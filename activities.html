@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracurricular Activities | Aya Lahrar</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <!--  CSS -->
+    <link href="stylle.css" rel="stylesheet" />
+    <style>
+        .activity-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.1) !important;
+        }
+        .media-thumbnail {
+            transition: transform 0.4s ease, opacity 0.3s ease;
+            cursor: pointer;
+        }
+        .media-wrapper {
+            overflow: hidden;
+            border-radius: 0.5rem;
+            position: relative;
+        }
+        .media-wrapper:hover .media-thumbnail {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .video-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            pointer-events: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body data-bs-theme="dark">
+
+    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color); border-bottom: 1px solid var(--bs-border-color);">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html#home" style="letter-spacing: -1px;">Lahrar.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#competence">Competence</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-secondary rounded-circle p-2 d-flex align-items-center justify-content-center" id="theme-toggle" style="width: 40px; height: 40px; border-color: var(--bs-border-color);">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header text-center">
+            <div class="container">
+                <h1 class="page-title" data-aos="fade-up">Extracurricular Activities</h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Discover my passions, hobbies, and activities outside of work and studies.</p>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    
+                    <!-- Activity 1: CODEX Club -->
+                    <div class="col-12" data-aos="fade-up">
+                        <div class="activity-card bg-body rounded-4 p-4 shadow-sm border" style="border-color: rgba(var(--primary-rgb), 0.1) !important;">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-star fs-3 me-3" style="color: var(--primary-color);"></i>
+                                <h3 class="fw-bold mb-0">CODEX Club <span class="fw-light fs-5 text-muted">(Star Member)</span></h3>
+                            </div>
+                            <p class="text-muted mb-4">Active participation and outstanding contributions to the CODEX Club, organizing technical events and fostering a community of developers.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.27.10.jpeg" class="glightbox media-wrapper d-block" data-gallery="codex">
+                                        <img src="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.27.10.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Codex">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.27.50.jpeg" class="glightbox media-wrapper d-block" data-gallery="codex">
+                                        <img src="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.27.50.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Codex">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.30.33.jpeg" class="glightbox media-wrapper d-block" data-gallery="codex">
+                                        <img src="assets/img/Codex/WhatsApp Image 2026-07-07 at 15.30.33.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Codex">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/Codex/WhatsApp Video 2026-07-07 at 15.29.56.mp4" class="glightbox media-wrapper d-block" data-gallery="codex">
+                                        <video src="assets/img/Codex/WhatsApp Video 2026-07-07 at 15.29.56.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <!-- New Codex Image -->
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/Codex/WhatsApp Image 2026-07-07 at 16.15.29.jpeg" class="glightbox media-wrapper d-block" data-gallery="codex">
+                                        <img src="assets/img/Codex/WhatsApp Image 2026-07-07 at 16.15.29.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Codex">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 2: Formula Student -->
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="activity-card bg-body rounded-4 p-4 shadow-sm border" style="border-color: rgba(var(--primary-rgb), 0.1) !important;">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-users-cog fs-3 me-3" style="color: var(--primary-color);"></i>
+                                <h3 class="fw-bold mb-0">RH & Formula Student</h3>
+                            </div>
+                            <p class="text-muted mb-4">Engaged as an HR member in the Formula Student Club, managing team dynamics, recruitment, and organizational activities.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/formula student/WhatsApp Video 2026-07-07 at 15.25.55.mp4" class="glightbox media-wrapper d-block" data-gallery="formula">
+                                        <video src="assets/img/formula student/WhatsApp Video 2026-07-07 at 15.25.55.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/formula student/WhatsApp Video 2026-07-07 at 15.56.26.mp4" class="glightbox media-wrapper d-block" data-gallery="formula">
+                                        <video src="assets/img/formula student/WhatsApp Video 2026-07-07 at 15.56.26.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <!-- New Formula Student Video -->
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/formula student/WhatsApp Video 2026-07-07 at 16.25.21.mp4" class="glightbox media-wrapper d-block" data-gallery="formula">
+                                        <video src="assets/img/formula student/WhatsApp Video 2026-07-07 at 16.25.21.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 3: Hackathon -->
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="activity-card bg-body rounded-4 p-4 shadow-sm border" style="border-color: rgba(var(--primary-rgb), 0.1) !important;">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-laptop-code fs-3 me-3" style="color: var(--primary-color);"></i>
+                                <h3 class="fw-bold mb-0">Hackathon</h3>
+                            </div>
+                            <p class="text-muted mb-4">Participating in intense, time-bound coding competitions to solve real-world problems and innovate collaboratively.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/hackathon/WhatsApp Image 2026-07-07 at 15.22.51.jpeg" class="glightbox media-wrapper d-block" data-gallery="hackathon">
+                                        <img src="assets/img/hackathon/WhatsApp Image 2026-07-07 at 15.22.51.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Hackathon">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/hackathon/WhatsApp Image 2026-07-07 at 15.34.01.jpeg" class="glightbox media-wrapper d-block" data-gallery="hackathon">
+                                        <img src="assets/img/hackathon/WhatsApp Image 2026-07-07 at 15.34.01.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Hackathon">
+                                    </a>
+                                </div>
+                                <!-- New Hackathon Image -->
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/hackathon/WhatsApp Image 2026-07-07 at 16.15.29.jpeg" class="glightbox media-wrapper d-block" data-gallery="hackathon">
+                                        <img src="assets/img/hackathon/WhatsApp Image 2026-07-07 at 16.15.29.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Hackathon">
+                                    </a>
+                                </div>
+                                <!-- New Hackathon Videos -->
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/hackathon/WhatsApp Video 2026-07-07 at 16.16.21 (1).mp4" class="glightbox media-wrapper d-block" data-gallery="hackathon">
+                                        <video src="assets/img/hackathon/WhatsApp Video 2026-07-07 at 16.16.21 (1).mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/hackathon/WhatsApp Video 2026-07-07 at 16.16.21.mp4" class="glightbox media-wrapper d-block" data-gallery="hackathon">
+                                        <video src="assets/img/hackathon/WhatsApp Video 2026-07-07 at 16.16.21.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 4: Iftar Khayr -->
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="activity-card bg-body rounded-4 p-4 shadow-sm border" style="border-color: rgba(var(--primary-rgb), 0.1) !important;">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-hands-helping fs-3 me-3" style="color: var(--primary-color);"></i>
+                                <h3 class="fw-bold mb-0">Iftar Khayr</h3>
+                            </div>
+                            <p class="text-muted mb-4">Volunteering in charitable initiatives like 'Iftar Khayr' to support the community and spread solidarity during Ramadan.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52 (1).jpeg" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <img src="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52 (1).jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Iftar">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52 (2).jpeg" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <img src="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52 (2).jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Iftar">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52.jpeg" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <img src="assets/img/iftar khayr/WhatsApp Image 2026-07-07 at 15.24.52.jpeg" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;" alt="Iftar">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 15.47.12.mp4" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <video src="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 15.47.12.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <!-- New Iftar Khayr Videos -->
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 16.16.21.mp4" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <video src="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 16.16.21.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 16.16.22.mp4" class="glightbox media-wrapper d-block" data-gallery="iftar">
+                                        <video src="assets/img/iftar khayr/WhatsApp Video 2026-07-07 at 16.16.22.mp4" class="img-fluid w-100 media-thumbnail" style="height: 200px; object-fit: cover;"></video>
+                                        <i class="fas fa-play-circle video-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer py-5 text-start mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h5 class="navbar-brand fw-bold fs-4">Aya Lahrar</h5>
+                    <p class="pe-3 text-muted">A passionate web developer dedicated to creating beautiful and functional digital experiences.</p>
+                    <div class="footer-socials mt-3">
+                        <a href="https://www.linkedin.com/in/lahrar-aya-ab81a7348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AyaProgrammer56" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aya_jannatt?igsh=bXBicGdmZmpjYzBv" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col">
+                     <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Web Development</li>
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h5>Get in Touch</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-2 text-muted"><i class="fas fa-envelope me-2 pt-1 text-primary"></i><span>aya.lahrar24@ump.ac.ma</span></li>
+                        <li class="d-flex text-muted"><i class="fas fa-phone me-2 pt-1 text-primary"></i><span>+212 6 06 20 92 39</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-footer text-center mt-5 pt-4">
+                <p class="mb-0 text-muted">&copy; 2026 Aya Lahrar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <script>
+      AOS.init({ duration: 800, once: true, offset: 50 });
+      
+      // Initialize GLightbox
+      const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: true
+      });
+      
+      // Theme Toggle Logic
+      document.addEventListener('DOMContentLoaded', () => {
+          const themeToggle = document.getElementById('theme-toggle');
+          const body = document.body;
+          const icon = themeToggle.querySelector('i');
+          
+          const applyTheme = (theme) => {
+              body.setAttribute('data-bs-theme', theme);
+              icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+              localStorage.setItem('theme', theme);
+          };
+
+          themeToggle.addEventListener('click', () => {
+              const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+              applyTheme(newTheme);
+          });
+
+          applyTheme(localStorage.getItem('theme') || 'dark');
+      });
+    </script>
+</body>
+</html>

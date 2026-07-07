@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificats | Votre Nom</title>
+    <title>My Certificates | Aya Lahrar</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,272 +11,156 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- AOS (Animate On Scroll) Library CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <style>
-        /* Copied styles from main page for consistency */
-        :root {
-            --primary-color: #E91E63;
-            --primary-rgb: 233, 30, 99;
-        }
-
-        [data-bs-theme="dark"] {
-            --bs-body-bg: #111111;
-            --bs-body-color: #a0a0a0;
-            --surface-color: #1e1e1e;
-            --bs-border-color: rgba(var(--primary-rgb), 0.2);
-            --bs-heading-color: #ffffff;
-            --bs-modal-bg: var(--surface-color);
-        }
-
-        [data-bs-theme="light"] {
-            --bs-body-bg: #f8f9fa;
-            --bs-body-color: #495057;
-            --surface-color: #ffffff;
-            --bs-border-color: #dee2e6;
-            --bs-heading-color: #212529;
-            --bs-modal-bg: var(--surface-color);
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .section-padding {
-            padding: 100px 0;
-        }
-        
-        .section-title {
-            color: var(--primary-color);
-            font-weight: 700;
-        }
-        
-        .card, .modal-content {
-            background-color: var(--surface-color);
-            border: 1px solid var(--bs-border-color);
-        }
-        
-        .nav-link.active, .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
-        
-        .btn-outline-primary {
-            --bs-btn-color: var(--primary-color);
-            --bs-btn-border-color: var(--primary-color);
-            --bs-btn-hover-bg: var(--primary-color);
-            --bs-btn-hover-border-color: var(--primary-color);
-            --bs-btn-hover-color: #fff;
-        }
-
-        .main-footer {
-            background-color: #1e1e1e;
-        }
-        .footer-col h5 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-        .footer-col a, .footer-col p {
-            color: var(--bs-body-color);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .footer-col a:hover {
-            color: var(--primary-color);
-        }
-        .footer-socials a {
-            color: var(--bs-body-color);
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        .footer-socials a:hover {
-            color: var(--primary-color);
-        }
-        .sub-footer {
-            border-top: 1px solid var(--bs-border-color);
-        }
-
-        /* NOUVEAU STYLE POUR LES CERTIFICATS */
-        .certificate-item {
-            background-color: var(--surface-color);
-            border: 1px solid var(--bs-border-color);
-            border-radius: 8px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-        .certificate-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-color);
-        }
-        
-    </style>
     <!--  CSS -->
     <link href="stylle.css" rel="stylesheet" />
 </head>
 <body data-bs-theme="dark">
 
-    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color);">
+    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color); border-bottom: 1px solid var(--bs-border-color);">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="PORTFOLIO.html">lahrar</a>
+            <a class="navbar-brand fw-bold fs-4" href="index.html#home" style="letter-spacing: -1px;">Lahrar.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="portfolio_final.html#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio_final.html#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="certificates.html">Travaux</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio_final.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#competence">Competence</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
-                <button class="btn btn-outline-secondary" id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <button class="btn btn-outline-secondary rounded-circle p-2 d-flex align-items-center justify-content-center" id="theme-toggle" style="width: 40px; height: 40px; border-color: var(--bs-border-color);">
+                    <i class="fas fa-sun"></i>
+                </button>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="section-padding">
+        <section class="page-header text-center">
             <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h1 class="section-title display-4">Mes Certificats</h1>
-                    <p class="lead col-lg-8 mx-auto">Je crois en l'apprentissage continu. Voici quelques-unes des certifications que j'ai acquises pour renforcer mes compétences.</p>
-                </div>
+                <h1 class="page-title" data-aos="fade-up">My Certificates</h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">I believe in continuous learning. Here are some of the certifications that support my skills.</p>
+            </div>
+        </section>
 
-                <div class="mt-5">
-                    <!-- Certificat 1 -->
-                    <div class="certificate-item d-flex justify-content-between align-items-center p-3 p-md-4 mb-3" data-aos="fade-right">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-award fa-2x text-primary me-3 me-md-4"></i>
-                            <div>
-                                <h5 class="mb-0" style="color: var(--bs-heading-color);">React - The Complete Guide</h5>
-                                <p class="mb-0 text-muted">Émetteur: Udemy</p>
+        <section class="pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certificate-card">
+                            <div class="certificate-img-container">
+                                <img src="assets/certificates/WhatsApp Image 2026-07-06 at 15.12.35.jpeg" alt="Certificate 1">
+                            </div>
+                            <div class="certificate-info">
+                                <span class="certificate-badge">Certification</span>
+                                <h3 class="certificate-title">Certificate 1</h3>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal1">Voir le certificat</button>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certificate-card">
+                            <div class="certificate-img-container">
+                                <img src="assets/certificates/WhatsApp Image 2026-07-06 at 15.13.38.jpeg" alt="Certificate 2">
+                            </div>
+                            <div class="certificate-info">
+                                <span class="certificate-badge">Certification</span>
+                                <h3 class="certificate-title">Certificate 2</h3>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Certificat 2 -->
-                     <div class="certificate-item d-flex justify-content-between align-items-center p-3 p-md-4 mb-3" data-aos="fade-right" data-aos-delay="100">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-award fa-2x text-primary me-3 me-md-4"></i>
-                            <div>
-                                <h5 class="mb-0" style="color: var(--bs-heading-color);">Node.js, Express, MongoDB & More</h5>
-                                <p class="mb-0 text-muted">Émetteur: Udemy</p>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="certificate-card">
+                            <div class="certificate-img-container">
+                                <img src="assets/certificates/WhatsApp Image 2026-07-06 at 15.13.47.jpeg" alt="Certificate 3">
+                            </div>
+                            <div class="certificate-info">
+                                <span class="certificate-badge">Certification</span>
+                                <h3 class="certificate-title">Certificate 3</h3>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal2">Voir le certificat</button>
                     </div>
 
-                    <!-- Certificat 3 -->
-                     <div class="certificate-item d-flex justify-content-between align-items-center p-3 p-md-4 mb-3" data-aos="fade-right" data-aos-delay="200">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-award fa-2x text-primary me-3 me-md-4"></i>
-                            <div>
-                                <h5 class="mb-0" style="color: var(--bs-heading-color);">Google UX Design Professional</h5>
-                                <p class="mb-0 text-muted">Émetteur: Coursera</p>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="certificate-card">
+                            <div class="certificate-img-container">
+                                <img src="assets/certificates/WhatsApp Image 2026-07-06 at 15.13.55.jpeg" alt="Certificate 4">
+                            </div>
+                            <div class="certificate-info">
+                                <span class="certificate-badge">Certification</span>
+                                <h3 class="certificate-title">Certificate 4</h3>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal3">Voir le certificat</button>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="certificate-card">
+                            <div class="certificate-img-container">
+                                <img src="assets/certificates/WhatsApp Image 2026-07-06 at 15.14.20.jpeg" alt="Certificate 5">
+                            </div>
+                            <div class="certificate-info">
+                                <span class="certificate-badge">Certification</span>
+                                <h3 class="certificate-title">Certificate 5</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer-->
-        <footer class="main-footer py-5">
+    <footer class="main-footer py-5 text-start mt-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 footer-col">
-                    <h5 class="navbar-brand fw-bold fs-4">lahrar aya</h5>
-                    <p class="pe-3">Développeur web passionné par la création d'expériences numériques belles et fonctionnelles.</p>
+                    <h5 class="navbar-brand fw-bold fs-4">Aya Lahrar</h5>
+                    <p class="pe-3 text-muted">A passionate web developer dedicated to creating beautiful and functional digital experiences.</p>
                     <div class="footer-socials mt-3">
-                        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/lahrar-aya-ab81a7348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AyaProgrammer56" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aya_jannatt?igsh=bXBicGdmZmpjYzBv" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 footer-col">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#work">Travaux</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                      <h5>Services</h5>
                     <ul class="list-unstyled">
-                        <li>Développement Web</li>
-                        <li>Développement Frontend</li>
-                        <li>Développement BackEnd</li>
-                        <li>Design UI/UX</li>
+                        <li>Web Development</li>
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>UI/UX Design</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                     <h5>Get in Touch</h5>
                     <ul class="list-unstyled">
-                        <li class="d-flex mb-2"><i class="fas fa-envelope me-2 pt-1"></i><span>aya.lahrar24@ump.ac.ma</span></li>
-                        <li class="d-flex"><i class="fas fa-phone me-2 pt-1"></i><span>+212 6 06 20 92 39</span></li>
+                        <li class="d-flex mb-2 text-muted"><i class="fas fa-envelope me-2 pt-1 text-primary"></i><span>aya.lahrar24@ump.ac.ma</span></li>
+                        <li class="d-flex text-muted"><i class="fas fa-phone me-2 pt-1 text-primary"></i><span>+212 6 06 20 92 39</span></li>
                     </ul>
                 </div>
             </div>
             <div class="sub-footer text-center mt-5 pt-4">
-                <p>&copy; 2025 lahrar aya. Tous droits réservés.</p>
+                <p class="mb-0 text-muted">&copy; 2026 Aya Lahrar. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- ================== MODALS POUR LES CERTIFICATS ================== -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="certModal1" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title section-title">React - The Complete Guide</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="https://placehold.co/800x600/1E1E1E/E91E63?text=Certificat+React" class="img-fluid" alt="Certificat React">
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal 2 -->
-    <div class="modal fade" id="certModal2" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title section-title">Node.js, Express, MongoDB & More</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="https://placehold.co/800x600/1E1E1E/E91E63?text=Certificat+Node.js" class="img-fluid" alt="Certificat Node.js">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="modal fade" id="certModal3" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title section-title">Google UX Design Professional</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-             <img src="https://placehold.co/800x600/1E1E1E/E91E63?text=Certificat+UX" class="img-fluid" alt="Certificat UX Design">
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -284,37 +168,27 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          duration: 800,
-          once: true,
-          offset: 100,
+      AOS.init({ duration: 800, once: true, offset: 50 });
+      
+      // Theme Toggle Logic
+      document.addEventListener('DOMContentLoaded', () => {
+          const themeToggle = document.getElementById('theme-toggle');
+          const body = document.body;
+          const icon = themeToggle.querySelector('i');
+          
+          const applyTheme = (theme) => {
+              body.setAttribute('data-bs-theme', theme);
+              icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+              localStorage.setItem('theme', theme);
+          };
+
+          themeToggle.addEventListener('click', () => {
+              const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+              applyTheme(newTheme);
+          });
+
+          applyTheme(localStorage.getItem('theme') || 'dark');
       });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Dark/Light Mode Toggle
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const themeIcon = themeToggle.querySelector('i');
-
-            const applyTheme = (theme) => {
-                body.setAttribute('data-bs-theme', theme);
-                themeIcon.classList.toggle('fa-moon', theme === 'light');
-                themeIcon.classList.toggle('fa-sun', theme === 'dark');
-                localStorage.setItem('portfolioTheme', theme);
-            };
-
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                applyTheme(newTheme);
-            });
-
-            // Appliquer le thème sauvegardé
-            const savedTheme = localStorage.getItem('portfolioTheme') || 'dark';
-            applyTheme(savedTheme);
-        });
     </script>
 </body>
 </html>
-

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | aya lahrar</title>
+    <title>Aya Lahrar | Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,231 +11,399 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- AOS (Animate On Scroll) Library CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--  CSS -->
+    
+    <!-- Custom CSS -->
     <link href="stylle.css" rel="stylesheet" />
-   
+    <style>
+        .journey-title {
+            transition: transform 0.3s ease;
+        }
+        .min-card:hover .journey-title {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body data-bs-theme="dark">
 
-    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color);">
+    <!-- NAVBAR -->
+    <header class="navbar navbar-expand-lg sticky-top" style="background-color: var(--surface-color); border-bottom: 1px solid var(--bs-border-color);">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="#home">Lahrar</a>
-             <!-- navbar in mobil-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold fs-4" href="#home" style="letter-spacing: -1px;">Lahrar.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work">Travaux</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competence">Competence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-                <button class="btn btn-outline-secondary" id="theme-toggle"><i class="fas fa-sun"></i></button>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-secondary rounded-circle p-2 d-flex align-items-center justify-content-center" id="theme-toggle" style="width: 40px; height: 40px; border-color: var(--bs-border-color);">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-
-        <!-- HOME  -->
-        <section id="home" class="section-padding">
-            <div class="container">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <h1 class="display-4 fw-bold">Je suis lahrar aya,<br><span class="section-title">Développeur Web</span></h1>
-                        <p class="lead my-4">J’aime transformer des idées en expériences numériques uniques, où la beauté rencontre la simplicité. Basé à Oujda, Maroc.</p>
-                        <a href="#contact" class="btn btn-primary btn-lg">Contactez-moi</a>
-                    </div>
-                    <div class="col-lg-6 text-center" data-aos="fade-left">
-                        <img src="image cv.jpg" class=" rounded-circle border border-5 " style="width: 300px; height: 300px; object-fit: cover; border-color:var(--primary-color)!important;">">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================== ABOUT ================== -->
-        <section id="about" class="section-padding">
-            <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h2 class="section-title">À propos de moi</h2>
-                    <p class="lead col-lg-8 mx-auto">Un aperçu de mon parcours, de ma formation et des certifications que j'ai obtenues au fil des ans.</p>
-                </div>
-                <div class="row mt-5 g-4">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card about-card h-100 p-4 text-center" data-bs-toggle="modal" data-bs-target="#projectsModal">
-                            <i class="fas fa-project-diagram fs-1 text-primary mb-3"></i>
-                            <h3 class="h5 fw-bold">Projets</h3>
-                            <p>Découvrez une sélection de mes meilleurs travaux, allant de sites vitrines à des applications web complexes.</p>
-                             <a href="project.html"   class="btn btn-primary" class="text-decoration-none text-reset">Voir mes projets</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card about-card h-100 p-4 text-center" data-bs-toggle="modal" data-bs-target="#educationModal">
-                             <i class="fas fa-graduation-cap fs-1 text-primary mb-3"></i>
-                            <h3 class="h5 fw-bold">Éducation</h3>
-                            <p>Mon parcours académique m'a fourni des bases solides en informatique et en développement logiciel.</p>
-                             <a href="education.html"  class="btn btn-primary" class="text-decoration-none text-reset">Voir mon parcours</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card about-card h-100 p-4 text-center" data-bs-toggle="modal" data-bs-target="#certificatesModal">
-                            <i class="fas fa-certificate fs-1 text-primary mb-3"></i>
-                            <h3 class="h5 fw-bold">Certificats</h3> 
-                            <p>Je crois en l'apprentissage continu. Voici quelques-unes des certifications que j'ai acquises.</p>
-                             <a href="certificate.html" class="btn btn-primary" class="text-decoration-none text-reset">Voir mes Certificats</a>
+        <!-- HERO SECTION -->
+        <section id="home" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+            <!-- Animated Background Gradient -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(233, 30, 99, 0.15) 0%, transparent 70%); z-index: -1; animation: pulseBg 6s infinite alternate;"></div>
+            
+            <div class="container text-center position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10" data-aos="fade-up">
+                        <span class="badge bg-secondary bg-opacity-25 text-primary rounded-pill px-3 py-2 mb-4" style="font-weight: 600; letter-spacing: 1px;">
+                            WELCOME TO MY PORTFOLIO
+                        </span>
+                        <h1 class="display-3 fw-bold mb-4" style="letter-spacing: -1px; min-height: 80px;">
+                            Hello, I'm <span id="typewriter" class="text-primary"></span><span class="typewriter-cursor text-primary">|</span>
+                        </h1>
+                        <p class="lead mb-5 mx-auto" style="max-width: 600px; color: var(--text-muted-color);">
+                            A passionate Digital Marketer & Content Creator dedicated to building beautiful, functional, and engaging digital experiences.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="#contact" class="btn btn-primary btn-lg px-4 rounded-pill">Get in Touch</a>
+                            <a href="CV LAHRA AYA.pdf" download class="btn btn-outline-secondary btn-lg px-4 rounded-pill">Download CV</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================== WORK ================== -->
-        <section id="work" class="section-padding">
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section-padding" style="background-color: var(--surface-color);">
+            <div class="container">
+                
+                <!-- About Content (Image & Bio) -->
+                <div class="row align-items-center mb-5 pb-5 border-bottom" style="border-color: rgba(var(--primary-rgb), 0.1) !important;">
+                    <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                        <div class="position-relative p-3 mx-auto" style="max-width: 400px;">
+                            <!-- Creative backdrop -->
+                            <div class="position-absolute border border-3 rounded-4" style="border-color: var(--primary-color) !important; width: 100%; height: 100%; top: 20px; left: -20px; z-index: 1;"></div>
+                            <div class="position-absolute rounded-4" style="background-color: rgba(var(--primary-rgb), 0.1); width: 100%; height: 100%; bottom: -15px; right: -15px; z-index: 1;"></div>
+                            <!-- Image -->
+                            <img src="assets/img/image cv.jpg" alt="Aya Lahrar" class="img-fluid rounded-4 position-relative shadow-lg" style="z-index: 2; width: 100%; object-fit: cover; aspect-ratio: 4/5;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
+                        <h2 class="section-title text-start mb-4">About Me</h2>
+                        <h3 class="h4 mb-4" style="color: var(--primary-color); font-weight: 600;">Building digital experiences.</h3>
+                        <p class="lead mb-4" style="color: var(--bs-body-color); line-height: 1.8; font-size: 1.1rem;">
+                            I am passionate about Digital Marketing, web design, and content creation. I enjoy creating modern and engaging digital experiences while continuously learning new marketing strategies, social media management, and UI/UX design. 
+                        </p>
+                        <p class="lead mb-0" style="color: var(--bs-body-color); line-height: 1.8; font-size: 1.1rem;">
+                            <i class="fas fa-quote-left me-2 text-primary opacity-50"></i>My goal is to combine creativity and technology to build impactful digital projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation Cards -->
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h3 class="h4 fw-bold">Explore My Journey</h3>
+                    <div class="mt-3 mx-auto rounded-pill" style="width: 50px; height: 4px; background-color: var(--primary-color);"></div>
+                </div>
+
+                <div class="row justify-content-center g-4">
+                    <!-- Education -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <a href="education.html" class="text-decoration-none">
+                            <div class="min-card p-5 h-100 rounded-4 text-center">
+                                <i class="fas fa-graduation-cap fs-1 text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold mb-2 text-primary journey-title">Education</h3>
+                                <p class="text-muted mb-0 small">My academic background</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Projects -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="project.html" class="text-decoration-none">
+                            <div class="min-card p-5 h-100 rounded-4 text-center">
+                                <i class="fas fa-laptop-code fs-1 text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold mb-2 text-primary journey-title">My Projects</h3>
+                                <p class="text-muted mb-0 small">Websites & applications</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Certificates -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="certificate.html" class="text-decoration-none">
+                            <div class="min-card p-5 h-100 rounded-4 text-center">
+                                <i class="fas fa-award fs-1 text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold mb-2 text-primary journey-title">Certificates</h3>
+                                <p class="text-muted mb-0 small">Skills & qualifications</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Visual Creations -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <a href="creation.html" class="text-decoration-none">
+                            <div class="min-card p-5 h-100 rounded-4 text-center">
+                                <i class="fas fa-palette fs-1 text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold mb-2 text-primary journey-title">Visual Creations</h3>
+                                <p class="text-muted mb-0 small">UI/UX & Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Extracurricular Activities -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <a href="activities.html" class="text-decoration-none">
+                            <div class="min-card p-5 h-100 rounded-4 text-center">
+                                <i class="fas fa-users fs-1 text-primary mb-3"></i>
+                                <h3 class="h4 fw-bold mb-2 text-primary journey-title">Extracurricular</h3>
+                                <p class="text-muted mb-0 small">Activities & Hobbies</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPETENCE SECTION -->
+        <section id="competence" class="section-padding">
             <div class="container text-center">
-                <h2 class="section-title" data-aos="fade-up">Technologies</h2>
-                 <p class="lead col-lg-8 mx-auto" data-aos="fade-up">Les outils et technologies que j'utilise pour transformer les idées en réalité.</p>
-                 <div class="row g-4 mt-5">
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                         <div class="card tech-card"><i class="fab fa-html5"></i><p class="mt-2 mb-0">HTML5</p></div>
-                     </div>
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-                         <div class="card tech-card"><i class="fab fa-css3-alt"></i><p class="mt-2 mb-0">CSS3</p></div>
-                     </div>
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-                         <div class="card tech-card"><i class="fab fa-js"></i><p class="mt-2 mb-0">JavaScript</p></div>
-                     </div>
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-                         <div class="card tech-card"><i class="fab fa-bootstrap"></i><p class="mt-2 mb-0">Bootstrap</p></div>
-                     </div>
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
-                         <div class="card tech-card"><i class="fab fa-react"></i><p class="mt-2 mb-0">React</p></div>
-                     </div>
-                     <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
-                         <div class="card tech-card"><i class="fab fa-java"></i><p class="mt-2 mb-0">Java</p></div>
-                     </div>
-                      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
-                         <div class="card tech-card"><i class="fab fa-python"></i><p class="mt-2 mb-0">Python</p></div>
-                     </div>
-                      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
-                         <div class="card tech-card"><i class="fab fa-figma"></i><p class="mt-2 mb-0">Figma</p></div>
-                     </div>
-                 </div>
+                <div data-aos="fade-up">
+                    <h2 class="section-title">Technologies</h2>
+                    <p class="section-subtitle mb-5" style="color: var(--text-muted-color);">The tools and technologies I use to turn ideas into reality.</p>
+                </div>
+
+                <div class="row g-4 mt-2 justify-content-center">
+                    <!-- Frontend Card -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card about-card h-100 p-4 text-center" style="cursor: pointer; background-color: var(--surface-color); border: 1px solid var(--bs-border-color);" data-bs-toggle="modal" data-bs-target="#frontendModal">
+                            <i class="fas fa-desktop fs-1 text-primary mb-3"></i>
+                            <h3 class="h5 fw-bold">Frontend</h3>
+                            <p class="text-muted small mb-0">HTML, CSS, JS, React</p>
+                        </div>
+                    </div>
+
+                    <!-- Backend Card -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card about-card h-100 p-4 text-center" style="cursor: pointer; background-color: var(--surface-color); border: 1px solid var(--bs-border-color);" data-bs-toggle="modal" data-bs-target="#backendModal">
+                            <i class="fas fa-server fs-1 text-primary mb-3"></i>
+                            <h3 class="h5 fw-bold">Backend</h3>
+                            <p class="text-muted small mb-0">Python, Flask</p>
+                        </div>
+                    </div>
+
+                    <!-- Design Card -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card about-card h-100 p-4 text-center" style="cursor: pointer; background-color: var(--surface-color); border: 1px solid var(--bs-border-color);" data-bs-toggle="modal" data-bs-target="#designModal">
+                            <i class="fas fa-paint-brush fs-1 text-primary mb-3"></i>
+                            <h3 class="h5 fw-bold">Design</h3>
+                            <p class="text-muted small mb-0">Figma, Canva, Photoshop</p>
+                        </div>
+                    </div>
+
+                    <!-- Tools Card -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card about-card h-100 p-4 text-center" style="cursor: pointer; background-color: var(--surface-color); border: 1px solid var(--bs-border-color);" data-bs-toggle="modal" data-bs-target="#toolsModal">
+                            <i class="fas fa-tools fs-1 text-primary mb-3"></i>
+                            <h3 class="h5 fw-bold">Tools</h3>
+                            <p class="text-muted small mb-0">Git, GitHub, VS Code</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ================== CONTACT ================== -->
-        <section id="contact" class="section-padding">
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-padding" style="background-color: var(--surface-color);">
             <div class="container">
                  <div class="text-center" data-aos="fade-up">
                     <h2 class="section-title">Contact Me</h2>
-                    <p class="lead col-lg-8 mx-auto">Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter.</p>
+                    <p class="section-subtitle mb-5 lead col-lg-8 mx-auto" style="color: var(--text-muted-color);">Do you have a project in mind or a question? Don't hesitate to contact me.</p>
                 </div>
-                <div class="row g-5 mt-5">
+                <div class="row g-5 mt-3">
                     <div class="col-lg-5" data-aos="fade-right">
-                        <div class="card h-100 p-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm" style="background-color: var(--surface-color);">
                             <div class="d-flex mb-4">
                                 <i class="fas fa-envelope contact-icon me-3"></i>
                                 <div>
-                                    <h5 class="mb-1">Email</h5>
-                                    <p class="mb-0">aya.lahrar24@ump.ac.ma</p>
+                                    <h5 class="mb-1 fw-bold">Email</h5>
+                                    <p class="mb-0 text-muted">aya.lahrar24@ump.ac.ma</p>
                                 </div>
                             </div>
                             <div class="d-flex mb-4">
                                 <i class="fas fa-phone contact-icon me-3"></i>
                                 <div>
-                                    <h5 class="mb-1">Téléphone</h5>
-                                    <p class="mb-0">+212 6 06 20 92 39 </p>
+                                    <h5 class="mb-1 fw-bold">Phone</h5>
+                                    <p class="mb-0 text-muted">+212 6 06 20 92 39</p>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <i class="fas fa-map-marker-alt contact-icon me-3"></i>
                                 <div>
-                                    <h5 class="mb-1">Location</h5>
-                                    <p class="mb-0">Oujda, Maroc</p>
+                                    <h5 class="mb-1 fw-bold">Location</h5>
+                                    <p class="mb-0 text-muted">Khemisset, Morocco</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7" data-aos="fade-left">
-                        <div class="card p-4">
-                            <form>
+                        <div class="card p-4 border-0 shadow-sm" style="background-color: var(--surface-color);">
+                            <form action="https://formsubmit.co/aya.lahrar24@ump.ac.ma" method="POST">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Nom Complet</label>
-                                    <input type="text" class="form-control" id="name" required>
+                                    <label for="name" class="form-label fw-bold">Full Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Adresse Email</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <label for="email" class="form-label fw-bold">Email Address</label>
+                                    <input type="email" name="email" class="form-control" id="email" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label fw-bold">Message</label>
+                                    <textarea name="message" class="form-control" id="message" rows="5" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Envoyer le Message</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill">Send Message</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer class="main-footer py-5">
+    <footer class="main-footer py-5 text-start">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 footer-col">
-                    <h5 class="navbar-brand fw-bold fs-4">lahrar aya</h5>
-                    <p class="pe-3">Développeur web passionné par la création d'expériences numériques belles et fonctionnelles.</p>
+                    <h5 class="navbar-brand fw-bold fs-4">Aya Lahrar</h5>
+                    <p class="pe-3 text-muted">A passionate web developer dedicated to creating beautiful and functional digital experiences.</p>
                     <div class="footer-socials mt-3">
-                        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/lahrar-aya-ab81a7348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AyaProgrammer56" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aya_jannatt?igsh=bXBicGdmZmpjYzBv" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 footer-col">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                      <h5>Services</h5>
                     <ul class="list-unstyled">
-                        <li>Développement Web</li>
-                        <li>Développement Frontend</li>
-                        <li>Applications React</li>
-                        <li>Design UI/UX</li>
+                        <li>Web Development</li>
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>UI/UX Design</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-col">
                     <h5>Get in Touch</h5>
                     <ul class="list-unstyled">
-                        <li class="d-flex mb-2"><i class="fas fa-envelope me-2 pt-1"></i><span>aya.lahrar24@ump.ac.ma</span></li>
-                        <li class="d-flex"><i class="fas fa-phone me-2 pt-1"></i><span>+212 6 06 20 92 39</span></li>
+                        <li class="d-flex mb-2 text-muted"><i class="fas fa-envelope me-2 pt-1 text-primary"></i><span>aya.lahrar24@ump.ac.ma</span></li>
+                        <li class="d-flex text-muted"><i class="fas fa-phone me-2 pt-1 text-primary"></i><span>+212 6 06 20 92 39</span></li>
                     </ul>
                 </div>
             </div>
             <div class="sub-footer text-center mt-5 pt-4">
-                <p>&copy; 2025 VotreNom. Tous droits réservés.</p>
+                <p class="mb-0 text-muted">&copy; 2026 Aya Lahrar. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Modals for Technologies -->
     
+    <!-- Frontend Modal -->
+    <div class="modal fade" id="frontendModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3" style="background-color: var(--surface-color); border: 1px solid var(--primary-color);">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-primary"><i class="fas fa-desktop me-2"></i>Frontend Technologies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-6"><i class="fab fa-html5 fs-1 d-block mb-2" style="color: #E34F26;"></i> <strong>HTML5</strong></div>
+                        <div class="col-6"><i class="fab fa-css3-alt fs-1 d-block mb-2" style="color: #1572B6;"></i> <strong>CSS3</strong></div>
+                        <div class="col-6 mt-4"><i class="fab fa-js fs-1 d-block mb-2" style="color: #F7DF1E;"></i> <strong>JavaScript</strong></div>
+                        <div class="col-6 mt-4"><i class="fab fa-react fs-1 d-block mb-2" style="color: #61DAFB;"></i> <strong>React</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Backend Modal -->
+    <div class="modal fade" id="backendModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3" style="background-color: var(--surface-color); border: 1px solid var(--primary-color);">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-primary"><i class="fas fa-server me-2"></i>Backend Technologies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-6"><i class="fab fa-python fs-1 d-block mb-2" style="color: #3776AB;"></i> <strong>Python</strong></div>
+                        <div class="col-6"><i class="fas fa-flask fs-1 d-block mb-2" style="color: var(--bs-body-color);"></i> <strong>Flask</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Modal -->
+    <div class="modal fade" id="designModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3" style="background-color: var(--surface-color); border: 1px solid var(--primary-color);">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-primary"><i class="fas fa-paint-brush me-2"></i>Design Tools</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-4"><i class="fab fa-figma fs-1 d-block mb-2" style="color: #F24E1E;"></i> <strong>Figma</strong></div>
+                        <div class="col-4"><span class="fw-bold d-block mb-2" style="font-size: 2rem; color: #00C4CC; line-height:1;">C</span> <strong>Canva</strong></div>
+                        <div class="col-4"><span class="fw-bold d-block mb-2" style="font-size: 2rem; color: #31A8FF; line-height:1;">Ps</span> <strong>Photoshop</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Modal -->
+    <div class="modal fade" id="toolsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3" style="background-color: var(--surface-color); border: 1px solid var(--primary-color);">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-primary"><i class="fas fa-tools me-2"></i>Development Tools</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-4"><i class="fab fa-git-alt fs-1 d-block mb-2" style="color: #F05032;"></i> <strong>Git</strong></div>
+                        <div class="col-4"><i class="fab fa-github fs-1 d-block mb-2" style="color: var(--bs-body-color);"></i> <strong>GitHub</strong></div>
+                        <div class="col-4"><i class="fas fa-code fs-1 d-block mb-2" style="color: #007ACC;"></i> <strong>VS Code</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -243,58 +411,62 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          duration: 800,
-          once: true,
-          offset: 100,
-      });
-    </script>
+      AOS.init({ duration: 800, once: true, offset: 50 });
+      
+      // Theme Toggle Logic
+      document.addEventListener('DOMContentLoaded', () => {
+          const themeToggle = document.getElementById('theme-toggle');
+          const body = document.body;
+          const icon = themeToggle.querySelector('i');
+          
+          const applyTheme = (theme) => {
+              body.setAttribute('data-bs-theme', theme);
+              icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+              localStorage.setItem('theme', theme);
+          };
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Dark/Light Mode Toggle
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const themeIcon = themeToggle.querySelector('i');
+          themeToggle.addEventListener('click', () => {
+              const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+              applyTheme(newTheme);
+          });
 
-            const applyTheme = (theme) => {
-                body.setAttribute('data-bs-theme', theme);
-                themeIcon.classList.toggle('fa-moon', theme === 'light');
-                themeIcon.classList.toggle('fa-sun', theme === 'dark');
-                localStorage.setItem('portfolioTheme', theme);
-            };
+          applyTheme(localStorage.getItem('theme') || 'dark');
+          applyTheme(localStorage.getItem('theme') || 'dark');
+          
+            // Typewriter Animation
+            const textToType = "Aya Lahrar";
+            const typeSpeed = 100;
+            const eraseSpeed = 50;
+            const delayBeforeErase = 2000;
+            let charIndex = 0;
+            let isErasing = false;
+            const typewriterEl = document.getElementById("typewriter");
 
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                applyTheme(newTheme);
-            });
-
-            // Appliquer le thème sauvegardé
-            const savedTheme = localStorage.getItem('portfolioTheme') || 'dark'; // Dark par défaut
-            applyTheme(savedTheme);
-            
-            // Active nav-link on scroll
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 150) {
-                        current = section.getAttribute('id');
+            function typeWriterEffect() {
+                if (!typewriterEl) return;
+                
+                if (isErasing) {
+                    typewriterEl.textContent = textToType.substring(0, charIndex - 1);
+                    charIndex--;
+                    if (charIndex === 0) {
+                        isErasing = false;
+                        setTimeout(typeWriterEffect, 500);
+                    } else {
+                        setTimeout(typeWriterEffect, eraseSpeed);
                     }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(current)) {
-                        link.classList.add('active');
+                } else {
+                    typewriterEl.textContent = textToType.substring(0, charIndex + 1);
+                    charIndex++;
+                    if (charIndex === textToType.length) {
+                        isErasing = true;
+                        setTimeout(typeWriterEffect, delayBeforeErase);
+                    } else {
+                        setTimeout(typeWriterEffect, typeSpeed);
                     }
-                });
-            });
+                }
+            }
+            setTimeout(typeWriterEffect, 500);
         });
     </script>
 </body>
 </html>
-
